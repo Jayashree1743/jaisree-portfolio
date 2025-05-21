@@ -83,6 +83,12 @@ const Copyright = styled.p`
   color: ${({ theme }) => theme.soft2};
   text-align: center;
 `;
+const ContactDetails = styled.div`
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: ${({ theme }) => theme.text_primary};
+`;
 
 function Footer() {
   return (
@@ -96,6 +102,11 @@ function Footer() {
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
         </Nav>
+        <ContactDetails>
+          📧 Email: <a href="mailto:jayasreeselvam37@gmail.com">jayasreeselvam37@gmail.com</a><br />
+          📞 Phone: <a href="tel:8148866771">+91 8148866771</a>
+        </ContactDetails>
+
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
         </SocialMediaIcons>
